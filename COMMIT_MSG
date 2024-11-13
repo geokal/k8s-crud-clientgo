@@ -1,0 +1,19 @@
+
+
+This commit implements a basic Kubernetes client application that demonstrates
+the usage of client-go library to interact with a Kubernetes cluster.
+
+Key features:
+- Configure Kubernetes client using local kubeconfig
+- List all pods across namespaces periodically
+- Demonstrate proper error handling for pod operations
+- Support custom kubeconfig path via command line flag
+
+Technical details:
+- Uses client-go for Kubernetes API interaction
+- Implements periodic pod listing with 10-second intervals
+- Includes comprehensive error handling for NotFound cases
+- Supports both default and custom kubeconfig paths
+
+This example serves as a reference implementation for basic
+Kubernetes client operations using the official Go client library.
