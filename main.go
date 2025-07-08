@@ -1,3 +1,15 @@
+// This is a Kubernetes client application that demonstrates basic cluster interaction.
+// It connects to a Kubernetes cluster using kubeconfig and performs the following operations:
+// 1. Lists all pods across all namespaces in the cluster
+// 2. Attempts to retrieve a specific pod named "example-xxxxx" from the default namespace
+// 3. Demonstrates error handling for different types of Kubernetes API errors
+// 4. Runs in a continuous loop with a 10-second interval between operations
+//
+// The application serves as an example of:
+// - Setting up Kubernetes client configuration
+// - Basic pod listing and retrieval operations
+// - Proper error handling for NotFound and StatusError cases
+// - Continuous monitoring of cluster state
 package main
 
 import (
